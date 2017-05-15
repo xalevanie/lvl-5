@@ -34128,9 +34128,10 @@ body {
 /* line 18, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
 .panels {
   min-height: 100vh;
-  overflow: hidden; }
+  overflow: hidden;
+  display: flex; }
 
-/* line 23, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
+/* line 24, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
 .panel {
   background: #6B0F9C;
   box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
@@ -34142,47 +34143,73 @@ body {
   transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
   font-size: 20px;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
 
-/* line 41, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
+/* line 48, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
 .panel1 {
   background-image: url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
 
-/* line 42, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
+/* line 49, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
 .panel2 {
   background-image: url(https://source.unsplash.com/1CD3fd8kHnE/1500x1500); }
 
-/* line 43, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
+/* line 50, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
 .panel3 {
   background-image: url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d); }
 
-/* line 44, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
+/* line 51, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
 .panel4 {
   background-image: url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
 
-/* line 45, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
+/* line 52, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
 .panel5 {
   background-image: url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
 
-/* line 47, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
+/* line 54, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
 .panel > * {
   margin: 0;
   width: 100%;
-  transition: transform 0.5s; }
+  transition: transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-/* line 53, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
+/* line 64, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
+.panel > *:first-child {
+  transform: translateY(-100%); }
+
+/* line 65, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
+.panel.open-active > *:first-child {
+  transform: translateY(0); }
+
+/* line 66, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
+.panel > *:last-child {
+  transform: translateY(100%); }
+
+/* line 67, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
+.panel.open-active > *:last-child {
+  transform: translateY(0); }
+
+/* line 69, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
 .panel p {
   text-transform: uppercase;
   font-family: 'Amatic SC', cursive;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
   font-size: 2em; }
 
-/* line 59, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
+/* line 75, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
 .panel p:nth-child(2) {
   font-size: 4em; }
 
-/* line 63, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
+/* line 79, /Users/Dawndylion/Desktop/lvl-5/css/styles.scss */
 .panel.open {
+  flex: 5;
   font-size: 40px; }
 
 /*# sourceMappingURL=styles.css.map */
